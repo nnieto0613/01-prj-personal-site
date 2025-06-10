@@ -1,1 +1,79 @@
 /* Add you CSS here */
+
+/* Set a cyan/light blue background and Verdana font for the whole page */
+body {
+  background-color: #e0f7fa; /* light cyan background */
+  font-family: Verdana, Arial, sans-serif; /* Verdana font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for each section */
+section {
+  background-color: #ffffff; /* white background for sections */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* slightly stronger shadow */
+}
+
+/* Center the text in the hero section */
+.hero {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Style for the profile picture */
+.profile-pic {
+  display: block;
+  margin: 0 auto 15px auto; /* center and add space below */
+  width: 120px; /* set a fixed width */
+  height: 120px; /* set a fixed height */
+  border-radius: 50%; /* make the image round */
+  object-fit: cover; /* crop image to fit the circle */
+  border: 3px solid #00bcd4; /* cyan border */
+  background-color: #b2ebf2; /* fallback background */
+}
+
+/* Style for section headings */
+h2 {
+  color: #0097a7; /* cyan/dark blue color */
+  margin-bottom: 10px;
+}
+
+/* Skills section: show images in a row */
+.skills-row {
+  display: flex; /* place images in a row */
+  justify-content: center; /* center the images */
+  gap: 24px; /* more space between images */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add a container for each skill image */
+.skills-row .skill-img {
+  width: 56px; /* larger image */
+  height: 56px;
+  border-radius: 8px;
+  background: #e0f7fa;
+  border: 1.5px solid #b2ebf2;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+  padding: 10px; /* add space inside the box */
+  box-sizing: border-box; /* include padding in size */
+  /* Add a little transition for hover effect (optional for fun) */
+  transition: box-shadow 0.2s;
+}
+
+/* Optional: Add a slight shadow on hover for interactivity */
+.skills-row .skill-img:hover {
+  box-shadow: 0 4px 12px rgba(0,188,212,0.15);
+}
+
+/* Remove old skills list styles */
+.skills ul,
+.skills li,
+.skill-text {
+  /* No styles needed since we are not using a list anymore */
+  all: unset;
+}
